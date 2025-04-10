@@ -31,15 +31,15 @@
     <div class="seccions-intro">
       <div class="section-pair">
         <div class="rodona intro-item">
-          <img src="/sayas-2/media/images/violin-1.png" alt="v-3">
+          <img src="/sayas-2/media/images/violin-1.png" alt="v-3" />
         </div>
         <div class="paragraf-intro intro-item">
           <p>
             A la secció de <strong>Violins</strong>, podràs explorar els violins
-            disponibles, amb fotografies detallades i descripcions tècniques. Cada
-            instrument ve acompanyat de notes sobre la seva restauració i, quan és
-            possible, mostres de so per sentir com respira i vibra un cop
-            recuperat.
+            disponibles, amb fotografies detallades i descripcions tècniques.
+            Cada instrument ve acompanyat de notes sobre la seva restauració i,
+            quan és possible, mostres de so per sentir com respira i vibra un
+            cop recuperat.
           </p>
         </div>
       </div>
@@ -49,26 +49,26 @@
             També podràs conèixer en profunditat el <strong
               >procés de restauració</strong
             >, un viatge que va des de la revisió inicial fins a l'ajustament
-            acústic final. A través de textos i imatges, et mostraré les diferents
-            fases del treball i la dedicació que comporta tornar un violí al seu
-            estat òptim, tant visualment com sonorament.
+            acústic final. A través de textos i imatges, et mostraré les
+            diferents fases del treball i la dedicació que comporta tornar un
+            violí al seu estat òptim, tant visualment com sonorament.
           </p>
         </div>
         <div class="rodona intro-item two-intro-item">
-          <img src="/sayas-2/media/images/res-1.jpg" alt="v-3">
+          <img src="/sayas-2/media/images/res-1.jpg" alt="v-3" />
         </div>
       </div>
       <div class="section-pair">
         <div class="rodona intro-item">
-          <img src="/sayas-2/media/images/violin-1.png" alt="v-3">
+          <img src="/sayas-2/media/images/violin-1.png" alt="v-3" />
         </div>
         <div class="paragraf-intro intro-item">
           <p>
             El meu objectiu no és només vendre instruments, sinó compartir la
             bellesa de la luteria artesanal, i fer arribar a músics i amants del
-            violí peces amb ànima, memòria i futur. Si tens qualsevol dubte, vols
-            veure els instruments en persona o parlar del que estàs buscant, estic
-            a la teva disposició.
+            violí peces amb ànima, memòria i futur. Si tens qualsevol dubte,
+            vols veure els instruments en persona o parlar del que estàs
+            buscant, estic a la teva disposició.
           </p>
         </div>
       </div>
@@ -114,7 +114,7 @@
   .paragraf-intro {
     grid-column: span 2;
   }
-  
+
   .rodona {
     width: 300px;
     height: 300px;
@@ -137,9 +137,9 @@
   .seccions-intro > * {
     opacity: 0;
     animation-name: fadeUp;
-    animation-duration: 0s;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-timing-function: step-end;
+    animation-timing-function: ease-out;
   }
 
   .seccions-intro > * {
@@ -147,11 +147,11 @@
     animation-range: entry 50% cover 50%;
   }
   one-intro-item {
-      order: 1;
-    }
-   .two-intro-item {
-      order: 2;
-    } 
+    order: 1;
+  }
+  .two-intro-item {
+    order: 2;
+  }
 
   @keyframes fadeUp {
     0% {
@@ -178,23 +178,22 @@
       justify-self: center;
     }
     .introduccio img {
-      width: 80%; 
+      width: 80%;
     }
     .one-intro-item {
       order: 2;
     }
-   .two-intro-item {
+    .two-intro-item {
       order: 1;
     }
     .section-pair {
       grid-template-columns: 1fr;
       gap: 30px;
     }
-   .rodona {
+    .rodona {
       width: 200px;
       height: 200px;
       justify-self: center;
     }
-   }
-  
+  }
 </style>
